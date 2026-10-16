@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Mehnaaz</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Caveat:wght@500;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#fff5fa;--pink:#ff4f8b;--blue:#5aa9ff;--gold:#ffd36b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--ink:#fff5fa}}
+:root:not([data-theme="light"]){}
+:root[data-theme="dark"]{}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:radial-gradient(120% 90% at 50% 0%,#5b1f6e,#1d0b3a 70%);color:var(--ink);font-family:Nunito,system-ui,sans-serif;overflow:hidden;-webkit-tap-highlight-color:transparent;transition:background 1s}
+body.blush{background:radial-gradient(120% 90% at 50% 20%,#ffe3ee,#ffb3cf 80%);color:#5a1a3c}
+body.night2{background:radial-gradient(120% 90% at 50% 0%,#2a1560,#0c0720 75%)}
+.pg{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:18px;padding:24px 20px}
+.pg.on{display:flex}
+h1,h2{font-family:Fraunces,Georgia,serif;margin:0;line-height:1.1}
+h1{font-size:clamp(36px,11vw,60px);font-weight:800}
+h2{font-size:clamp(24px,7vw,34px);font-weight:600}
+p{margin:0;max-width:32ch;line-height:1.5}
+.sub{opacity:.8;font-size:15px}
+button{font:800 17px Nunito,sans-serif;border:0;border-radius:999px;padding:14px 30px;min-height:48px;color:#4a1236;background:linear-gradient(135deg,#ffd36b,#ff9bb8);box-shadow:0 8px 24px #0005;cursor:pointer}
+button:active{transform:scale(.96)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.fade{animation:fin 1.2s both}
+@keyframes fin{from{opacity:0;transform:translateY(10px)}}
+/* p1 */
+.phone{font-size:72px;animation:buzz .12s infinite}
+@keyframes buzz{25%{transform:translate(-3px,2px) rotate(-4deg)}75%{transform:translate(3px,-2px) rotate(4deg)}}
+.cd{font:800 44px Fraunces,serif;color:var(--gold)}
+/* p2 */
+.salam{font-family:Fraunces,serif;font-size:clamp(30px,9vw,46px);font-weight:800}
+.ar{font-size:30px;margin-top:-8px}
+.scene{width:min(360px,100%);height:150px;position:relative}
+.scene svg{width:100%;height:100%;overflow:visible}
+#arrow{transition:transform .6s cubic-bezier(.3,.1,.2,1);transform:translateX(0)}
+#arrow.fly{transform:translateX(205px)}
+#heartT{transform-origin:318px 75px;transition:transform .3s}
+#heartT.hit{transform:scale(1.3)}
+#string{transition:d .2s}
+.fill{position:fixed;inset:0;background:#ff4f8b;clip-path:circle(0 at 85% 60%);z-index:5;pointer-events:none}
+.fill.go{animation:iris 1s ease-in forwards}
+@keyframes iris{to{clip-path:circle(150% at 85% 60%)}}
+#tree{position:fixed;inset:0;z-index:6;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:radial-gradient(90% 60% at 50% 30%,#fffaf2 0%,#ffeef0 55%,#ffd2e2 100%)}
+#tree.on{display:flex;animation:fin .8s both}
+.canopy{width:min(340px,92vw);height:auto;max-height:72vh;overflow:visible}
+.lf{transform-box:fill-box;transform-origin:center;transform:scale(0);animation:pop .45s forwards}
+@keyframes pop{to{transform:scale(1)}}
+#hbd{display:none}
+.nxt{margin-top:6px}
+/* cake */
+.cake{position:relative;width:180px;height:170px;background:none;border:0;padding:0;box-shadow:none;cursor:pointer;margin-top:10px}
+.cake i{position:absolute;display:block}
+.t1{left:6px;right:6px;bottom:0;height:56px;border-radius:12px;background:linear-gradient(#b3703f,#7d4524)}
+.t2{left:26px;right:26px;bottom:52px;height:46px;border-radius:12px;background:linear-gradient(#ffc2d6,#ff8fb4)}
+.ic{left:20px;right:20px;bottom:88px;height:18px;border-radius:18px;background:#fff}
+.cdl{left:50%;bottom:104px;width:10px;height:38px;margin-left:-5px;border-radius:3px;background:repeating-linear-gradient(45deg,#6ad0ff 0 6px,#fff 6px 12px)}
+.fl{left:50%;bottom:140px;width:16px;height:26px;margin-left:-8px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(#fff 15%,#ffc83d 55%,#ff6a3d);box-shadow:0 0 30px 12px #ffb34766;animation:fl .25s infinite alternate;transform-origin:50% 100%}
+@keyframes fl{to{transform:scale(1.1,.9) rotate(4deg)}}
+.out .fl{display:none}
+.sm{left:50%;bottom:142px;opacity:0;font-size:24px}
+.out .sm{animation:sm 1.6s forwards}
+@keyframes sm{0%{opacity:.9;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-20%,-80px)}}
+.wish{font:700 30px Caveat,cursive;color:var(--gold)}
+/* balloons */
+.sky{position:relative;width:min(360px,100%);height:min(360px,46vh)}
+.bl{position:absolute;width:64px;height:80px;border:0;padding:0;border-radius:50% 50% 48% 48%;box-shadow:inset -7px -9px 0 #0002,0 8px 16px #0003;animation:bob 3s ease-in-out infinite alternate;font:800 20px Nunito;color:#fff}
+.bl::after{content:"";position:absolute;left:50%;top:100%;width:2px;height:56px;background:#fff8;transform:translateX(-50%)}
+@keyframes bob{to{transform:translateY(-12px) rotate(3deg)}}
+.pop{animation:poof .25s forwards!important}
+@keyframes poof{to{transform:scale(1.6);opacity:0}}
+.note{padding:10px 18px;border-radius:999px;border:1px solid var(--gold);background:#ffffff1c;font-weight:800}
+.card{min-height:84px;width:min(340px,100%);padding:16px 18px;border-radius:18px;background:#ffffff22;border:1px solid #ffffff55;font:700 24px/1.25 Caveat,cursive;display:flex;align-items:center;justify-content:center}
+/* shayari */
+.shayari{font:500 27px/1.45 Caveat,cursive;max-width:22em;white-space:pre-line}
+.sig{align-self:flex-end;margin-right:10%;font:700 26px Caveat,cursive;color:var(--gold)}
+/* questions */
+.q{font-family:Fraunces,serif;font-size:clamp(34px,10vw,52px);font-weight:800}
+.ans{position:relative;width:min(340px,100%);height:150px}
+.ans button{position:absolute;top:40px}
+#yes{left:calc(50% - 130px);background:linear-gradient(135deg,#7dffb5,#2fd68a)}
+#no{left:calc(50% + 10px);background:linear-gradient(135deg,#ffd0d0,#ff6b81);transition:left .25s,top .25s}
+.conf{position:fixed;top:-20px;width:9px;height:14px;border-radius:2px;pointer-events:none;animation:fall linear forwards;z-index:20}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+
+<!-- 0: opening tap (browsers only allow vibration after a tap) -->
+<section class="pg on" id="splash" style="z-index:30;background:radial-gradient(120% 90% at 50% 0%,#5b1f6e,#1d0b3a 70%)">
+  <div class="phone" aria-hidden="true">🎁</div>
+  <h2>A surprise for Mehnaaz</h2>
+  <button id="open">Tap to open</button>
+</section>
+
+<!-- 1 -->
+<section class="pg on" id="p1">
+  <div class="phone" aria-hidden="true">📱</div>
+  <h2>Your phone is buzzing...</h2>
+  <div class="cd" id="cd">10</div>
+  <p class="sub" id="vsub">Hold your phone and feel it</p>
+  <p class="sub"><b>Please wait for 10 seconds</b></p>
+  <button id="b1" hidden>Next</button>
+</section>
+
+<!-- 2 -->
+<section class="pg" id="p2">
+  <div class="salam fade">Assalamualaikum</div>
+  <div class="ar fade" style="animation-delay:.4s" lang="ar" dir="rtl">السلام عليكم</div>
+  <div class="scene fade" style="animation-delay:1.4s">
+    <svg viewBox="0 0 360 150" aria-label="Bow and arrow aiming at a pink heart">
+      <path d="M70 15 Q15 75 70 135" fill="none" stroke="#c98b4f" stroke-width="7" stroke-linecap="round"/>
+      <path id="string" d="M70 15 L70 135" stroke="#fff" stroke-width="2" fill="none"/>
+      <g id="arrow"><line x1="70" y1="75" x2="170" y2="75" stroke="#ffe3b0" stroke-width="4" stroke-linecap="round"/><path d="M170 75 l-14 -8 v16 z" transform="translate(14 0)" fill="#fff"/><path d="M70 75 l12 -9 M70 75 l12 9" stroke="#ff9bb8" stroke-width="4" stroke-linecap="round"/></g>
+      <g id="heartT"><path d="M318 108 C285 86 288 55 308 53 C316 53 318 60 318 62 C318 60 321 53 329 53 C349 55 351 86 318 108Z" fill="#ff4f8b" stroke="#fff" stroke-width="2"/></g>
+    </svg>
+  </div>
+  <button id="shoot" class="fade" style="animation-delay:1.8s">Click here</button>
+  <div class="fill" id="fill"></div>
+  <div id="tree"><svg class="canopy" id="canopy" viewBox="0 0 320 400" role="img" aria-label="Heart shaped tree"></svg></div>
+  <div id="hbd"><h1>Happy Birthday</h1><h1 style="color:#ffd36b;margin-top:6px">Mehnaaz</h1></div>
+  <button class="nxt" id="b2" hidden>Click here</button>
+</section>
+
+<!-- 3 -->
+<section class="pg" id="p3">
+  <h2>Make a wish</h2>
+  <button class="cake" id="cake" aria-label="Click on the cake"><i class="t1"></i><i class="t2"></i><i class="ic"></i><i class="cdl"></i><i class="fl"></i><i class="sm">💨</i></button>
+  <button id="cakeBtn">Click on the cake</button>
+  <div class="wish" id="wishT"></div>
+  <button id="b3" hidden>Next</button>
+</section>
+
+<!-- 4 -->
+<section class="pg" id="p4">
+  <div class="note">Click the balloons</div>
+  <div class="sky" id="sky"></div>
+  <div class="card" id="card" aria-live="polite">Your wish will appear here</div>
+  <button id="b4" hidden>Next</button>
+</section>
+
+<!-- 5 -->
+<section class="pg" id="p5">
+  <div class="shayari">Mat pucho kaisi lagti hoo,
+Chand bhi sharma jaye aisi lagti hoo,
+
+Kabhi dekhna khud ku aaine me,
+Tum acchi ya khubsurat nahi,
+
+Tum sirf meri lagti hoo.</div>
+  <div class="sig">Your's:- Rayyan</div>
+  <button id="b5">Next</button>
+</section>
+
+<!-- 6 -->
+<section class="pg" id="p6">
+  <div class="q" id="q"></div>
+  <div class="ans" id="ans"><button id="yes">Yes</button><button id="no">No</button></div>
+</section>
+
+<script>
+const $=id=>document.getElementById(id);
+const pages=["p1","p2","p3","p4","p5","p6"];
+function go(n){pages.forEach(p=>$(p).classList.remove("on"));$(pages[n]).classList.add("on");
+  if(n===1)runP2();if(n===3)initBalloons();if(n===5)showQ();}
+function confetti(k=70){const c=["#ffd36b","#ff9bb8","#9ad7ff","#c8a2ff","#fff"];
+  for(let i=0;i<k;i++){const e=document.createElement("i");e.className="conf";e.style.left=Math.random()*100+"vw";e.style.background=c[i%5];
+  e.style.animationDuration=2+Math.random()*2.5+"s";e.style.animationDelay=Math.random()*.4+"s";document.body.appendChild(e);setTimeout(()=>e.remove(),5200);}}
+
+/* 1: vibrate 10 seconds */
+let vt=null,left=10,started=false;
+function startVib(){if(started)return;started=true;
+  if(!navigator.vibrate){$("vsub").textContent="Vibration is not supported on this device (iPhones block it)";}
+  else{$("vsub").textContent="Vibrating for 10 seconds...";}
+  const buzz=()=>{if(navigator.vibrate)navigator.vibrate(900);};buzz();
+  vt=setInterval(()=>{left--;$("cd").textContent=Math.max(left,0);if(left<=0){stopVib();}else buzz();},1000);}
+function stopVib(){clearInterval(vt);if(navigator.vibrate)navigator.vibrate(0);$("b1").hidden=false;$("vsub").textContent="Okay, ready?";}
+$("open").onclick=()=>{$("splash").style.display="none";startVib();};
+$("b1").onclick=()=>{stopVib();go(1);};
+
+/* 2: bow, arrow, heart, tree, birthday */
+function runP2(){}
+$("shoot").onclick=()=>{$("shoot").hidden=true;
+  $("string").setAttribute("d","M70 15 L40 75 L70 135");
+  setTimeout(()=>{$("string").setAttribute("d","M70 15 L70 135");$("arrow").classList.add("fly");},250);
+  setTimeout(()=>{$("heartT").classList.add("hit");},850);
+  setTimeout(()=>{$("fill").classList.add("go");},1100);
+  setTimeout(()=>{document.body.classList.add("blush");buildTree();},2150);
+  setTimeout(()=>{$("tree").classList.remove("on");$("fill").style.display="none";document.body.classList.remove("blush");document.body.classList.add("night2");
+    ["p2"].forEach(()=>{document.querySelectorAll("#p2 > :not(#hbd):not(#b2)").forEach(e=>e.style.display="none");});
+    $("hbd").style.display="block";$("hbd").classList.add("fade");$("b2").hidden=false;confetti(100);},6600);};
+function buildTree(){const c=$("canopy");
+  const cols=["#1f7bff","#5aa9ff","#c2185b","#ff3d86","#ff8fb8","#ff5fa2","#3b5bdb","#ffb3d1"];
+  let h='<defs><linearGradient id="tk" x1="0" x2="1"><stop offset="0" stop-color="#7a2f4d"/><stop offset="1" stop-color="#b8587a"/></linearGradient></defs><path d="M147 396 C152 335 172 305 157 236 L169 236 C184 306 166 338 173 396Z" fill="url(#tk)"/>';
+  let n=0;$("tree").classList.add("on");
+  while(n<190){const x=Math.random()*2.5-1.25,y=Math.random()*2.5-1.15;
+    if(Math.pow(x*x+y*y-1,3)-x*x*y*y*y>0)continue;
+    const cx=(160+x*98).toFixed(1),cy=(148-y*88).toFixed(1),r=(Math.random()*50-25).toFixed(0),s=(.45+Math.random()*.5).toFixed(2);
+    h+=`<g transform="translate(${cx} ${cy}) rotate(${r}) scale(${s})"><g class="lf" style="animation-delay:${n*16}ms"><path d="M0 11 C-22 -4 -12 -17 0 -7 C12 -17 22 -4 0 11Z" fill="${cols[n%cols.length]}"/><ellipse cx="-7" cy="-6" rx="4" ry="2.2" fill="#fff" opacity=".45" transform="rotate(-35 -7 -6)"/></g></g>`;n++;}
+  c.innerHTML=h;}
+$("b2").onclick=()=>{document.body.classList.remove("night2");go(2);};
+
+/* 3: cake */
+function blow(){const k=$("cake");if(k.classList.contains("out"))return;k.classList.add("out");
+  $("cakeBtn").hidden=true;$("wishT").textContent="Candle blown out. Happy Birthday, Mehnaaz!";$("b3").hidden=false;confetti(70);}
+$("cake").onclick=blow;$("cakeBtn").onclick=blow;
+$("b3").onclick=()=>go(3);
+
+/* 4: balloons (1 to 5, left to right) */
+const W=["One day you will fulfill your dream inshallah, e.g. Umrah and Hajj","Always be happy","May all your dreams come true by the grace of Allah swt","Always be healthy","Inshallah one day you will make your parents sooo proud"];
+const BC=["#ff7aa8","#ffb347","#7ad7ff","#b794ff","#7dffb5"];
+const BP=[[6,90],[74,10],[142,100],[210,15],[274,95]];
+function initBalloons(){const s=$("sky");s.innerHTML="";let n=0;$("b4").hidden=true;$("card").textContent="Your wish will appear here";
+  W.forEach((w,i)=>{const b=document.createElement("button");b.className="bl";b.textContent=i+1;b.setAttribute("aria-label","Balloon "+(i+1));
+    b.style.cssText+=`left:${BP[i][0]}px;top:${BP[i][1]+40}px;background:${BC[i]};animation-delay:${i*.35}s`;
+    b.onclick=()=>{$("card").textContent=w;b.classList.add("pop");setTimeout(()=>b.remove(),250);if(++n===5){$("b4").hidden=false;confetti(50);}};
+    s.appendChild(b);});}
+$("b4").onclick=()=>go(4);
+$("b5").onclick=()=>go(5);
+
+/* 6: questions */
+const Q=["I love you","Will you marry me?","Will you take good care of me?"];let qi=0;
+function showQ(){qi=0;ask();}
+function ask(){$("q").textContent=Q[qi]+(qi===0?" 💖":"");const no=$("no");no.style.left="calc(50% + 10px)";no.style.top="40px";}
+function dodge(e){e.preventDefault();const box=$("ans").getBoundingClientRect();const no=$("no");
+  const x=Math.random()*(box.width-90),y=Math.random()*(box.height-50);no.style.left=x+"px";no.style.top=y+"px";}
+["pointerenter","touchstart","click"].forEach(ev=>$("no").addEventListener(ev,dodge,{passive:false}));
+$("yes").onclick=()=>{confetti(50);if(++qi<Q.length)ask();else{
+  $("q").textContent="Alhamdulillah 💖 Happy Birthday, Mehnaaz!";$("ans").style.display="none";confetti(120);}};
+</script>
+</body>
+</html>
